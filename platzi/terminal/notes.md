@@ -58,3 +58,53 @@
 - Eliminar archivo sin validación → `rm name`
 - Eliminar archivo con validación → `rm -i name`
 - Eliminar recursivamente → `rm -r name`
+
+# Clase 4 - Explorando el contenido de nuestros archivos
+
+## Terminal
+
+- Mostrar cabeza de archivo → `head name`
+- Mostrar primeras n líneas → ````````````head name -n number`
+- Mostrar cola de archivo → `tail name`
+- Mostrar últimas n líneas → `tail name -n number`
+- Mostrar archivo → `less name`
+- Buscar texto → `/text`
+- Salir de vista → `q`
+- Abrir archivo → `xdg-open name` ↔ `wslview name`
+- Detener proceso → `Ctrl + C`
+- Abrir sistema de archivos → `nautilus route/`
+
+# Clase 5 - ****¿Qué es un comando?****
+
+## Clases
+
+- Es un programa ejecutable.
+- Es un comando de utilidad de la shell, es decir, viene por defecto.
+- Es una función de shell, es decir, viene de afuera.
+- Es un alias, es decir, abrevia un comando.
+
+## Terminal
+
+- Mostrar clase de comando → `Type command`
+- Crear alias → `alias abbreviation="command"`
+- Mostrar ayuda → `help command` ↔ `command --help`
+- Mostrar manual → `man command`
+- Mostrar información → `info command`
+- Mostrar descripción → `whatis command`
+
+# Clase 6 - ****Wildcards****
+
+## Concepto
+
+- Serie de caracteres especiales para búsquedas avanzadas.
+
+## Terminal
+
+- Filtrar todos los archivos con determinada extensión → `ls *.extension`
+- Filtrar todos los archivos con determinado texto al comienzo → `ls text*`
+- Limitar a 1 caracter después de determinado texto al comienzo → `ls text?`
+- Limitar a 3 caracteres después de determinado texto al comienzo → `ls text???`
+- Filtrar todos los archivos y directorios con alguna mayúscula al comienzo → `ls [[:upper:]]*`
+- Filtrar únicamente los directorios con alguna mayúscula al comienzo → `ls -d [[:upper:]]*`
+- Filtrar todos los archivos y directorios con alguna minúscula al comienzo → `ls [[:lower:]]*`
+- Filtrar todos los archivos con determinados caracteres al comienzo → `ls [characters]*`
