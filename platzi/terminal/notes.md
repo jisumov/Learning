@@ -29,7 +29,9 @@
 
 ## Sistema de archivos
 
-![https://static.platzi.com/media/articlases/Images/image%2860%29.png](https://static.platzi.com/media/articlases/Images/image%2860%29.png)
+![Platzi. (2021). *Aprendiendo a caminar en la terminal*.](https://static.platzi.com/media/articlases/Images/image%2860%29.png)
+
+Platzi. (2021). *Aprendiendo a caminar en la terminal*.
 
 ## Terminal
 
@@ -64,7 +66,7 @@
 ## Terminal
 
 - Mostrar cabeza de archivo → `head name`
-- Mostrar primeras n líneas → ````````````head name -n number`
+- Mostrar primeras n líneas → `head name -n number`
 - Mostrar cola de archivo → `tail name`
 - Mostrar últimas n líneas → `tail name -n number`
 - Mostrar archivo → `less name`
@@ -85,7 +87,7 @@
 
 ## Terminal
 
-- Mostrar clase de comando → `Type command`
+- Mostrar clase de comando → `type command`
 - Crear alias → `alias abbreviation="command"`
 - Mostrar ayuda → `help command` ↔ `command --help`
 - Mostrar manual → `man command`
@@ -108,3 +110,51 @@
 - Filtrar únicamente los directorios con alguna mayúscula al comienzo → `ls -d [[:upper:]]*`
 - Filtrar todos los archivos y directorios con alguna minúscula al comienzo → `ls [[:lower:]]*`
 - Filtrar todos los archivos con determinados caracteres al comienzo → `ls [characters]*`
+
+# Clase 7 - Redirecciones: cómo funciona la shell
+
+## File descriptors
+
+- Entrada: stdin y tiene el código 0.
+- Salida: stdout y tiene el código 1.
+- Error: stderr y tiene el código 2.
+
+![Platzi. (2021). *Redirecciones: cómo funciona la shell*.](https://static.platzi.com/media/articlases/Images/image%28100%29.png)
+
+Platzi. (2021). *Redirecciones: cómo funciona la shell*.
+
+## Terminal
+
+- Redirigir archivo sin concatenación → `command name-from > name-to`
+- Redirigir archivo con concatenación → `command name-from >> name-to`
+- Redirigir archivo con stderr → `command name-from 2> name-to`
+- Redirigir archivo con stderr y stdout → `command name-from > name-to 2>&1`
+
+# Clase 8 - Redirecciones: pipe operator
+
+## Concepto
+
+- Redirige un stdout como stdin en otro comando, es decir, concatena salidas como entradas.
+
+## Terminal
+
+- Generar stdout → `echo "text"`
+- Concatenar stdout → `cat name-1 name-2`
+- Listar y mostrar archivos → `ls -lh | less`
+- Listar, guardar y mostrar archivos → `ls -lh | tee "name" | less`
+- Listar, ordenar, guardar y mostrar archivos → `ls -lh | sort | tee "name" | less`
+- Dibujar vaca → `cowsay "text"`
+- Pintar stdout → `echo "text" | lolcat`
+
+# Clase 9 - Encadenando comandos: operadores de control
+
+## Concepto
+
+- Son símbolos reservados que permiten encadenar comandos.
+
+## Terminal
+
+- Listar archivos, crear directorio y mostrar calendario de manera síncrona→ `ls; mkdir name; cal`
+- Listar archivos, mostrar fecha y calendario de manera asíncrona → `ls & date & cal`
+- Crear y cambiar directorio de manera condicional con el operador AND→ `mkdir name && cd route/`
+- Cambiar directorio o crear archivo de manera condicional con el operador OR → `cd route/ || touch name`
