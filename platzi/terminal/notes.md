@@ -221,3 +221,40 @@ Koen S. (2020). *Unix Permissions — The Easy Way*.
 - $PATH: rutas donde están los binarios que usa el sistema.
 - Manejador de paquete: importa e instala binarios en el sistema.
 - .bashrc: archivo donde está la configuración de bash.
+
+# Clase 13 - Comandos de búsqueda
+
+## Terminal
+
+- Localizar comando → `which command`
+- Localizar archivo por nombre → `find ./ -name name` ↔ `find ~ -name name`
+- Localizar por directorios → `find ./ -type d -name name`
+- Localizar por archivos → `find ./ -type f -name name`
+- Localizar por tamaño → `find ./ -size size`
+
+# Clase 14 - Usando el comando grep
+
+## Concepto
+
+- Encuentra coincidencias dentro de un archivo de texto.
+
+## Terminal
+
+- Buscar texto en archivo → `grep text file`
+- Buscar texto sin case-sensitive en archivo → `grep -i text file`
+- Contar coincidencias en archivo → `grep -c text file`
+- Buscar texto que no coincida en archivo → `grep -v text file`
+- Contar palabras en archivo → `wc file` ↔ `wc -w file`
+- Contar líneas en archivo → `wc -l file`
+- Contar bits en archivo → `wc -c file`
+
+# Clase 15 - Utilidades de red
+
+## Terminal
+
+- Mostrar configuración de red → `ifconfig`
+- Enviar peticiones a url→ `ping url`
+- Mostrar código fuente de url→ `curl url`
+- Descargar código fuente de url → `wget url`
+- Mostrar ruta hacia url → `traceroute url`
+- Mostrar dispositivos de red → `netstat -i`
