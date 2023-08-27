@@ -138,7 +138,7 @@ Platzi. (2021). *Redirecciones: cómo funciona la shell*.
 
 ## Terminal
 
-- Generar stdout → `echo "text"`
+- Imprimir stdout → `echo "text"`
 - Concatenar stdout → `cat name-1 name-2`
 - Listar y mostrar archivos → `ls -lh | less`
 - Listar, guardar y mostrar archivos → `ls -lh | tee "name" | less`
@@ -158,3 +158,66 @@ Platzi. (2021). *Redirecciones: cómo funciona la shell*.
 - Listar archivos, mostrar fecha y calendario de manera asíncrona → `ls & date & cal`
 - Crear y cambiar directorio de manera condicional con el operador AND→ `mkdir name && cd route/`
 - Cambiar directorio o crear archivo de manera condicional con el operador OR → `cd route/ || touch name`
+
+# Clase 10 - Cómo se manejan los permisos
+
+## Tipos de archivo
+
+- Archivo normal → `-`
+- Directorio → `d`
+- Link simbólico → `l`
+- Archivo de bloque especial (USB) → `b`
+
+## Tipos de modo
+
+- Dueño | Grupo | World
+- Read: permiso de lectura y se representa con r.
+- Write: permiso de escritura y se representa con w.
+- Execute: permiso de ejecución y se representa con x.
+
+![Koen S. (2020). *Unix Permissions — The Easy Way*.](https://miro.medium.com/v2/resize:fit:1400/1*Qd9k5fOi4crDc33l0VveaQ.png)
+
+Koen S. (2020). *Unix Permissions — The Easy Way*.
+
+## Modo simbólico
+
+- Solo para el usuario → `u`
+- Solo para el grupo → `g`
+- Solo para otros (world) → `o`
+- Para todos → `a`
+
+# Clase 11 - Modificando permisos en la terminal
+
+## Terminal
+
+- Escribir texto en archivo → `cat > name`
+- Guardar texto en archivo → `Ctrl + D`
+- Cambiar permisos de archivo con representación octal → `chmod octal name`
+- Eliminar permisos de archivo con modo simbólico → `chmod user-mode name`
+- Agregar permisos de archivo con modo simbólico → `chmod user+mode name`
+- Sobreescribir permisos de archivo con modo simbólico → `chmod user=mode name`
+- Concatenar permisos de archivo con modo simbólico → `````````chmod user-1-mode,user-2user-3+mode name`
+- Mostrar usuario → `whoami`
+- Cambiar usuario → `su user`
+- Cambiar a root → `sudo su`
+- Ejecutar comandos con permisos de superusuario → `sudo command`
+- Cambiar contraseña → `passwd`
+
+# Clase 12 - Cómo configurar variables de entorno
+
+## Terminal
+
+- Crear link simbólico (acceso directo) → `ln -s route/ name`
+- Mostrar variables de entorno → `printenv`
+- Imprimir variable de entorno → `echo $variable`
+- Abrir archivo para editar alias, variables de entorno, rutas, etc. → `code .bashrc`
+- Agregar alias → `alias abbreviation='command'`
+- Agregar variable de entorno → `NAME="text"`
+- Agregar ruta → `PATH=$PATH:route/`
+- Refrescar cambios → `bash`
+
+## Conceptos
+
+- $PATH: rutas donde están los binarios que usa el sistema.
+- Manejador de paquete: importa e instala binarios en el sistema.
+- .bashrc: archivo donde está la configuración de bash.
