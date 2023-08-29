@@ -258,3 +258,36 @@ Koen S. (2020). *Unix Permissions — The Easy Way*.
 - Descargar código fuente de url → `wget url`
 - Mostrar ruta hacia url → `traceroute url`
 - Mostrar dispositivos de red → `netstat -i`
+
+# Clase 16 - Comprimiendo archivos tar y zip
+
+## Terminal
+
+- Comprimir archivos a .tar → `tar -cvf name.tar folder/`
+- Comprimir archivos a .gz → `tar -cvzf name.tar.gz folder/`
+- Descomprimir archivos de .tar → `tar -xvf name.tar`
+- Descomprimir archivos de .gz → `tar -xvzf name.tar.gz`
+- Comprimir archivos a .zip → `zip -r name.zip folder/`
+- Descomprimir archivos de .zip → `unzip name.zip`
+
+# Clase 17 - Manejo de procesos
+
+## Terminal
+
+- Mostrar procesos brevemente → `ps`
+- Detener proceso → `kill PID`
+- Mostrar procesos detalladamente → `top`
+
+# Clase 18 - Procesos en foreground y background
+
+## Conceptos
+
+- Background: proceso en ejecución que no se muestra en la terminal.
+- Foreground: proceso en ejecución que se muestra en la terminal.
+
+## Terminal
+
+- Suspender proceso → `Ctrl + Z`
+- Mostrar procesos en background → `jobs`
+- Mover proceso a foreground → `fg number`
+- Mover proceso a background → `command &` ↔ `bg number`
