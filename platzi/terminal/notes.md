@@ -330,7 +330,7 @@ Koen S. (2020). *Unix Permissions — The Easy Way*.
 - Instalar Tilix → `sudo apt install tilix`
 - Instalar ZSH → `sudo apt install zsh`
 - Cambiar shell a ZSH → `chsh -s $(which zsh)`
-- Cuando se instale, oprimir 0.
+- Abrir Tilix → Oprimir 0
 - Instalar Oh My ZSH → `sh-c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"`
 - Instalar Powerlevel10k→ `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
 - Configurar Powerlevel10k → `vim .zshrc` → `ZSH_THEME="powerlevel10k/powerlevel10k”`
