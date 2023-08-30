@@ -338,7 +338,7 @@ Koen S. (2020). *Unix Permissions — The Easy Way*.
 - Cambiar fuentes → `Profiles` → `Edit Profiles` → `Default` → `Custom font`
 - Recargar shell → `zsh`
 - Personalizar Powerlevel10k.
-- Seleccionar Verbose.
+- Seleccionar `Verbose`
 
 # Clase 21 - Nunca pares de hackear
 
