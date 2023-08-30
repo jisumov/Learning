@@ -113,12 +113,12 @@
 ## Lista
 
 - Mostrar directorio → `pwd`
-- Cambiar directorio → `cd route/`
+- Cambiar directorio → `cd <path>`
 - Limpiar terminal → `clear`
 - Resetear terminal → `reset`
-- Crear directorio → `mkdir name`
-- Crear archivo → `touch name`
-- Abrir Visual Studio Code → `code .`
+- Crear directorio → `mkdir <foldername>`
+- Crear archivo → `touch <filename>`
+- Abrir Visual Studio Code → `code <path>`
 
 ## Index
 
@@ -172,7 +172,7 @@
 
 ## Terminal
 
-- Generar llave SSH → `ssh-keygen -t ed25519 -C email@domain.com`
+- Generar llave SSH → `ssh-keygen -t ed25519 -C <email@domain.com>`
 - Crear passphrase.
 - Inicializar agente SSH → `eval "$(ssh-agent -s)"`
 - Agregar llave al agente SSH → `ssh-add ~/.ssh/id_ed25519`
@@ -190,9 +190,9 @@
 - Inicializar repositorio → `git init`
 - Verificar estado → `git status`
 - Agregar archivo → `git add`
-- Configurar nombre de usuario → `git config --global user.name "name"`
-- Configurar correo de usuario → `git config --global user.email "email@domain.com"`
-- Crear commit → `git commit -m "message"`
+- Configurar nombre de usuario → `git config --global user.name "<username>"`
+- Configurar correo de usuario → `git config --global user.email "<email@domain.com>"`
+- Crear commit → `git commit -m "<message>"`
 
 ## **GitHub**
 
@@ -201,7 +201,7 @@
 
 ## Terminal
 
-- Agregar repositorio → `git remote add origin git@github.com:username/Repository.git`
+- Agregar repositorio → `git remote add origin <git@github.com:username/Repository.git>`
 - Verificar referencias → `git remote -v`
 - Subir cambios → `git push origin main`
 
