@@ -196,7 +196,7 @@ Koen S. (2020). *Unix Permissions — The Easy Way*.
 - Eliminar permisos de archivo con modo simbólico → `chmod <symbolic-users>-<modes> <filename>`
 - Agregar permisos de archivo con modo simbólico → `chmod <symbolic-users>+<modes> <filename>`
 - Sobreescribir permisos de archivo con modo simbólico → `chmod <symbolic-users>=<modes> <filename>`
-- Concatenar permisos de archivo con modo simbólico → `chmod <symbolic-users>-<modes>,<symbolic-users>+<modes> <filename>`
+- Concatenar permisos de archivo con modo simbólico → `chmod <symbolic-users><operator><modes>,<symbolic-users><operator><modes> <filename>`
 - Mostrar usuario → `whoami`
 - Cambiar usuario → `su <username>`
 - Cambiar a root → `sudo su`
