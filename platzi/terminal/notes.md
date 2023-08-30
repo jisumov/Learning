@@ -291,3 +291,67 @@ Koen S. (2020). *Unix Permissions — The Easy Way*.
 - Mostrar procesos en background → `jobs`
 - Mover proceso a foreground → `fg number`
 - Mover proceso a background → `command &` ↔ `bg number`
+
+# Clase 19 - ****Editores de texto en la terminal****
+
+## Terminal
+
+- Abrir editor de texto → `vim`
+- Salir de vim → `:q`
+- Crear archivo con vim → `vim name`
+- Insertar texto → `i`
+- Salir de inserción → `esc`
+- Buscar texto → `/text`
+- Eliminar línea → `11` ↔ `dd`
+- Guardar texto → `:w`
+- Guardar texto y salir → `:wq`
+
+# Clase 20 - Personalizar la terminal de comandos
+
+## Tilix
+
+- [https://gnunn1.github.io/tilix-web](https://gnunn1.github.io/tilix-web/)
+
+## ZSH
+
+- [https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+
+## Oh My ZSH
+
+- [https://ohmyz.sh](https://ohmyz.sh/)
+
+## Powerlevel10k
+
+- [https://github.com/romkatv/powerlevel10k](https://github.com/romkatv/powerlevel10k)
+
+## Paso a paso
+
+- Instalar Tilix → `sudo apt install tilix`
+- Instalar ZSH → `sudo apt install zsh`
+- Cambiar shell a ZSH → `chsh -s $(which zsh)`
+- Cuando se instale, oprimir 0.
+- Instalar Oh My ZSH → `sh-c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"`
+- Instalar Powerlevel10k→ `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
+- Configurar Powerlevel10k → `vim .zshrc` → `ZSH_THEME="powerlevel10k/powerlevel10k”`
+- Descargar e instalar fuentes desde el repositorio.
+- Cambiar fuentes → `Profiles` → `Edit Profiles` → `Default` → `Custom font`
+- Recargar shell → `zsh`
+- Personalizar Powerlevel10k.
+- Seleccionar Verbose.
+
+# Clase 21 - Nunca pares de hackear
+
+## Para la terminal
+
+- [https://nostarch.com/linuxbasicsforhackers](https://nostarch.com/linuxbasicsforhackers)
+- [https://nostarch.com/tlcl2](https://nostarch.com/tlcl2)
+
+## Para la búsqueda
+
+- [https://www.oreilly.com/library/view/grep-pocket-reference/9780596157005](https://www.oreilly.com/library/view/grep-pocket-reference/9780596157005/)
+- [https://www.oreilly.com/library/view/regular-expression-pocket/9780596514273](https://www.oreilly.com/library/view/regular-expression-pocket/9780596514273/)
+
+## Para Linux
+
+- [https://www.oreilly.com/library/view/linux-pocket-guide/9781491927557](https://www.oreilly.com/library/view/linux-pocket-guide/9781491927557/)
+- [https://www.oreilly.com/library/view/learning-the-vi/9780596529833](https://www.oreilly.com/library/view/learning-the-vi/9780596529833/)
