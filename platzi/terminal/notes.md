@@ -36,45 +36,45 @@ Platzi. (2021). *Aprendiendo a caminar en la terminal*.
 ## Terminal
 
 - Listar archivos → `ls`
-- Cambiar directorio → `cd <path>`
+- Cambiar directorio → `cd route/`
 - Limpiar terminal → `clear` ↔ `Ctrl + L`
 - Listar detalladamente → `ls -l`
 - Mostrar vista humana → `ls -lh`
 - Mostrar directorio → `pwd`
-- Describir archivo → `file <filename>`
+- Describir archivo → `file name`
 
 # Clase 3 - Manipulando archivos y directorios
 
 ## Terminal
 
-- Listar archivos ocultos → ````ls -a [-l]`
-- Listar por tamaño en orden descendente → `ls -S [-l]`
-- Listar por nombre en orden descendente → `ls -r [-l]`
+- Listar archivos ocultos → `ls -la`
+- Listar por tamaño en orden descendente → `ls -lS`
+- Listar por nombre en orden descendente → `ls -lr`
 - Mostrar vista de árbol → `tree`
-- Mostrar nivel de árbol → `tree -L <number-of-levels>`
-- Crear directorio → `mkdir <foldername>`
-- Crear archivo → `touch <filename>`
-- Copiar archivo → `cp <source> <destination>`
-- Mover archivo → `mv <source> <destination>`
-- Renombrar archivo → ```````````````````````````````mv <old-filename> <new-filename>`
-- Eliminar archivo sin validación → `rm <filename>`
-- Eliminar archivo con validación → `rm -i <filename>`
-- Eliminar recursivamente → `rm -r <foldername>`
+- Mostrar nivel de árbol → `tree -L number`
+- Crear directorio → `mkdir name`
+- Crear archivo → `touch name`
+- Copiar archivo → `cp name-from name-to`
+- Mover archivo → `mv name route/`
+- Renombrar archivo → `mv name-old name-new`
+- Eliminar archivo sin validación → `rm name`
+- Eliminar archivo con validación → `rm -i name`
+- Eliminar recursivamente → `rm -r name`
 
 # Clase 4 - Explorando el contenido de nuestros archivos
 
 ## Terminal
 
-- Mostrar cabeza de archivo → `head <filename>`
-- Mostrar primeras n líneas → `head <filename> -n <number-of-lines>`
-- Mostrar cola de archivo → `tail <filename>`
-- Mostrar últimas n líneas → `tail <filename> -n <number-of-lines>`
-- Mostrar archivo → `less <filename>`
-- Buscar texto → `/<text>`
+- Mostrar cabeza de archivo → `head name`
+- Mostrar primeras n líneas → `head name -n number`
+- Mostrar cola de archivo → `tail name`
+- Mostrar últimas n líneas → `tail name -n number`
+- Mostrar archivo → `less name`
+- Buscar texto → `/text`
 - Salir de vista → `q`
-- Abrir archivo → `xdg-open <filename>` ↔ `wslview <filename>`
+- Abrir archivo → `xdg-open name` ↔ `wslview name`
 - Detener proceso → `Ctrl + C`
-- Abrir sistema de archivos → `nautilus <path>`
+- Abrir sistema de archivos → `nautilus route/`
 
 # Clase 5 - ****¿Qué es un comando?****
 
@@ -87,12 +87,12 @@ Platzi. (2021). *Aprendiendo a caminar en la terminal*.
 
 ## Terminal
 
-- Mostrar clase de comando → `type <command-name>`
-- Crear alias → `alias <shortcut>="<command-to-execute>"`
-- Mostrar ayuda → `help <command-name>` ↔ `<command-name> --help`
-- Mostrar manual → `man <command-name>`
-- Mostrar información → ```info <command-name>`
-- Mostrar descripción → `whatis <command-name>`
+- Mostrar clase de comando → `type command`
+- Crear alias → `alias abbreviation="command"`
+- Mostrar ayuda → `help command` ↔ `command --help`
+- Mostrar manual → `man command`
+- Mostrar información → `info command`
+- Mostrar descripción → `whatis command`
 
 # Clase 6 - ****Wildcards****
 
@@ -102,14 +102,14 @@ Platzi. (2021). *Aprendiendo a caminar en la terminal*.
 
 ## Terminal
 
-- Filtrar todos los archivos con determinada extensión → `ls *.<extension>`
-- Filtrar todos los archivos con determinado texto al comienzo → `ls <text>*`
-- Limitar a 1 caracter después de determinado texto al comienzo → `ls <text>?`
-- Limitar a 3 caracteres después de determinado texto al comienzo → `ls <text>???`
+- Filtrar todos los archivos con determinada extensión → `ls *.extension`
+- Filtrar todos los archivos con determinado texto al comienzo → `ls text*`
+- Limitar a 1 caracter después de determinado texto al comienzo → `ls text?`
+- Limitar a 3 caracteres después de determinado texto al comienzo → `ls text???`
 - Filtrar todos los archivos y directorios con alguna mayúscula al comienzo → `ls [[:upper:]]*`
 - Filtrar únicamente los directorios con alguna mayúscula al comienzo → `ls -d [[:upper:]]*`
 - Filtrar todos los archivos y directorios con alguna minúscula al comienzo → `ls [[:lower:]]*`
-- Filtrar todos los archivos con determinados caracteres al comienzo → `ls [<characters>]*`
+- Filtrar todos los archivos con determinados caracteres al comienzo → `ls [characters]*`
 
 # Clase 7 - Redirecciones: cómo funciona la shell
 
@@ -125,10 +125,10 @@ Platzi. (2021). *Redirecciones: cómo funciona la shell*.
 
 ## Terminal
 
-- Redirigir archivo sin concatenación → `<command-name> <source> > <destination>`
-- Redirigir archivo con concatenación → ``<command-name> <source> >> <destination>`
-- Redirigir archivo con stderr → ``<command-name> <source> 2> <destination>`
-- Redirigir archivo con stderr y stdout → ``<command-name> <source> > <destination> 2>&1`
+- Redirigir archivo sin concatenación → `command name-from > name-to`
+- Redirigir archivo con concatenación → `command name-from >> name-to`
+- Redirigir archivo con stderr → `command name-from 2> name-to`
+- Redirigir archivo con stderr y stdout → `command name-from > name-to 2>&1`
 
 # Clase 8 - Redirecciones: pipe operator
 
@@ -138,13 +138,13 @@ Platzi. (2021). *Redirecciones: cómo funciona la shell*.
 
 ## Terminal
 
-- Imprimir stdout → `echo "<text>"`
-- Concatenar stdout → ``cat <filename-1> <filename-2>`
+- Imprimir stdout → `echo "text"`
+- Concatenar stdout → `cat name-1 name-2`
 - Listar y mostrar archivos → `ls -lh | less`
-- Listar, guardar y mostrar archivos → ```````ls -lh | tee "<filename>" | less`
-- Listar, ordenar, guardar y mostrar archivos → `ls -lh | sort | tee "<filename>" | less`
-- Dibujar vaca → `cowsay "<text>"`
-- Pintar stdout → `echo "<text>" | lolcat`
+- Listar, guardar y mostrar archivos → `ls -lh | tee "name" | less`
+- Listar, ordenar, guardar y mostrar archivos → `ls -lh | sort | tee "name" | less`
+- Dibujar vaca → `cowsay "text"`
+- Pintar stdout → `echo "text" | lolcat`
 
 # Clase 9 - Encadenando comandos: operadores de control
 
@@ -154,10 +154,10 @@ Platzi. (2021). *Redirecciones: cómo funciona la shell*.
 
 ## Terminal
 
-- Listar archivos, crear directorio y mostrar calendario de manera síncrona→ `ls; mkdir <foldername>; cal`
+- Listar archivos, crear directorio y mostrar calendario de manera síncrona→ `ls; mkdir name; cal`
 - Listar archivos, mostrar fecha y calendario de manera asíncrona → `ls & date & cal`
-- Crear y cambiar directorio de manera condicional con el operador AND→ `mkdir <foldername> && cd <path>`
-- Cambiar directorio o crear archivo de manera condicional con el operador OR → `cd <path> || touch <filename>`
+- Crear y cambiar directorio de manera condicional con el operador AND→ `mkdir name && cd route/`
+- Cambiar directorio o crear archivo de manera condicional con el operador OR → `cd route/ || touch name`
 
 # Clase 10 - Cómo se manejan los permisos
 
@@ -190,30 +190,30 @@ Koen S. (2020). *Unix Permissions — The Easy Way*.
 
 ## Terminal
 
-- Escribir texto en archivo → ``cat > <filename>`
+- Escribir texto en archivo → `cat > name`
 - Guardar texto en archivo → `Ctrl + D`
-- Cambiar permisos de archivo con representación octal → `chmod <octal> <filename>`
-- Eliminar permisos de archivo con modo simbólico → `chmod <symbolic-users>-<modes> <filename>`
-- Agregar permisos de archivo con modo simbólico → `chmod <symbolic-users>+<modes> <filename>`
-- Sobreescribir permisos de archivo con modo simbólico → `chmod <symbolic-users>=<modes> <filename>`
-- Concatenar permisos de archivo con modo simbólico → ``````````chmod <symbolic-users>-<modes>,<symbolic-users>+<modes> <filename>`
+- Cambiar permisos de archivo con representación octal → `chmod octal name`
+- Eliminar permisos de archivo con modo simbólico → `chmod user-mode name`
+- Agregar permisos de archivo con modo simbólico → `chmod user+mode name`
+- Sobreescribir permisos de archivo con modo simbólico → `chmod user=mode name`
+- Concatenar permisos de archivo con modo simbólico → `````````chmod user-1-mode,user-2user-3+mode name`
 - Mostrar usuario → `whoami`
-- Cambiar usuario → `su <username>`
+- Cambiar usuario → `su user`
 - Cambiar a root → `sudo su`
-- Ejecutar comandos con permisos de superusuario → `sudo <command-to-execute>`
+- Ejecutar comandos con permisos de superusuario → `sudo command`
 - Cambiar contraseña → `passwd`
 
 # Clase 12 - Cómo configurar variables de entorno
 
 ## Terminal
 
-- Crear link simbólico (acceso directo) → `ln -s <path> <shortcut>`
+- Crear link simbólico (acceso directo) → `ln -s route/ name`
 - Mostrar variables de entorno → `printenv`
-- Imprimir variable de entorno → `echo $<VARIABLE_NAME>`
+- Imprimir variable de entorno → `echo $variable`
 - Abrir archivo para editar alias, variables de entorno, rutas, etc. → `code .bashrc`
-- Agregar alias → `alias <shortcut>='<command-to-execute>'`
-- Agregar variable de entorno → `<VARIABLE_NAME>="<text>"`
-- Agregar ruta → `PATH=$PATH:<path>`
+- Agregar alias → `alias abbreviation='command'`
+- Agregar variable de entorno → `NAME="text"`
+- Agregar ruta → `PATH=$PATH:route/`
 - Refrescar cambios → `bash`
 
 ## Conceptos
@@ -226,12 +226,11 @@ Koen S. (2020). *Unix Permissions — The Easy Way*.
 
 ## Terminal
 
-- Localizar comando → `which <command-name>`
-- Localizar archivo por nombre → `find ./ -name <filename>` ↔ ``find ~ -name <filename>`
-- Localizar archivo por wildcard → `find ./ -name <wildcard>`
-- Localizar por directorios → `find ./ -type d -name <foldername>`
-- Localizar por archivos → `find ./ -type f -name <filename>`
-- Localizar por tamaño → `find ./ -size <size-with-units>`
+- Localizar comando → `which command`
+- Localizar archivo por nombre → `find ./ -name name` ↔ `find ~ -name name`
+- Localizar por directorios → `find ./ -type d -name name`
+- Localizar por archivos → `find ./ -type f -name name`
+- Localizar por tamaño → `find ./ -size size`
 
 # Clase 14 - Usando el comando grep
 
@@ -241,42 +240,42 @@ Koen S. (2020). *Unix Permissions — The Easy Way*.
 
 ## Terminal
 
-- Buscar texto en archivo → `grep <text> <filename>`
-- Buscar texto sin case-sensitive en archivo → `grep -i <text> <filename>`
-- Contar coincidencias en archivo → `grep -c <text> <filename>`
-- Buscar texto que no coincida en archivo → `grep -v <text> <filename>`
-- Contar palabras en archivo → `wc <filename>` ↔ `wc -w <filename>`
-- Contar líneas en archivo → `wc -l <filename>`
-- Contar bits en archivo → `wc -c <filename>`
+- Buscar texto en archivo → `grep text file`
+- Buscar texto sin case-sensitive en archivo → `grep -i text file`
+- Contar coincidencias en archivo → `grep -c text file`
+- Buscar texto que no coincida en archivo → `grep -v text file`
+- Contar palabras en archivo → `wc file` ↔ `wc -w file`
+- Contar líneas en archivo → `wc -l file`
+- Contar bits en archivo → `wc -c file`
 
 # Clase 15 - Utilidades de red
 
 ## Terminal
 
 - Mostrar configuración de red → `ifconfig`
-- Enviar peticiones a URL→ `ping <hostname>`
-- Mostrar código fuente de URL → `curl <hostname>`
-- Descargar código fuente de URL → `wget <hostname>`
-- Mostrar ruta hacia URL → `traceroute <hostname>`
+- Enviar peticiones a url→ `ping url`
+- Mostrar código fuente de url→ `curl url`
+- Descargar código fuente de url → `wget url`
+- Mostrar ruta hacia url → `traceroute url`
 - Mostrar dispositivos de red → `netstat -i`
 
 # Clase 16 - Comprimiendo archivos tar y zip
 
 ## Terminal
 
-- Comprimir archivos a .tar → `tar -cvf <foldername>.tar <source>`
-- Comprimir archivos a .gz → `tar -cvzf <foldername>.tar.gz <source>`
-- Descomprimir archivos de .tar → `tar -xvf <foldername>.tar`
-- Descomprimir archivos de .gz → `tar -xvzf <foldername>.tar.gz`
-- Comprimir archivos a .zip → `zip -r <foldername>.zip <destination>`
-- Descomprimir archivos de .zip → `unzip <foldername>.zip`
+- Comprimir archivos a .tar → `tar -cvf name.tar folder/`
+- Comprimir archivos a .gz → `tar -cvzf name.tar.gz folder/`
+- Descomprimir archivos de .tar → `tar -xvf name.tar`
+- Descomprimir archivos de .gz → `tar -xvzf name.tar.gz`
+- Comprimir archivos a .zip → `zip -r name.zip folder/`
+- Descomprimir archivos de .zip → `unzip name.zip`
 
 # Clase 17 - Manejo de procesos
 
 ## Terminal
 
 - Mostrar procesos brevemente → `ps`
-- Detener proceso → ``kill <PID>`
+- Detener proceso → `kill PID`
 - Mostrar procesos detalladamente → `top`
 
 # Clase 18 - Procesos en foreground y background
@@ -290,8 +289,8 @@ Koen S. (2020). *Unix Permissions — The Easy Way*.
 
 - Suspender proceso → `Ctrl + Z`
 - Mostrar procesos en background → `jobs`
-- Mover proceso a foreground → `fg <number-of-job>`
-- Mover proceso a background → ```````<command-to-execute> &` ↔ ``bg <number-of-job>`
+- Mover proceso a foreground → `fg number`
+- Mover proceso a background → `command &` ↔ `bg number`
 
 # Clase 19 - ****Editores de texto en la terminal****
 
@@ -299,10 +298,10 @@ Koen S. (2020). *Unix Permissions — The Easy Way*.
 
 - Abrir editor de texto → `vim`
 - Salir de vim → `:q`
-- Crear archivo con vim → `vim <filename>`
+- Crear archivo con vim → `vim name`
 - Insertar texto → `i`
 - Salir de inserción → `esc`
-- Buscar texto → `/<text>`
+- Buscar texto → `/text`
 - Eliminar línea → `11` ↔ `dd`
 - Guardar texto → `:w`
 - Guardar texto y salir → `:wq`
