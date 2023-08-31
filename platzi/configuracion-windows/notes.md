@@ -180,7 +180,7 @@
 
 ## **GitHub**
 
-- Settings → Access → SSH and GPG keys → New SSH key
+- Settings → Access → SSH and GPG keys → New SSH key.
 - Pegar toda la llave SSH.
 
 # Clase 15 - Subir tu primer repo
@@ -196,7 +196,7 @@
 
 ## **GitHub**
 
-- Your repositories → New → Repository name → Add README file → Create repository
+- Your repositories → New → Repository name → Add README file → Create repository.
 - Copiar enlace SSH.
 
 ## Terminal
