@@ -113,7 +113,7 @@
 ## Lista
 
 - Mostrar directorio → `pwd`
-- Cambiar directorio → `cd <path>`
+- Cambiar directorio → `cd [path]`
 - Limpiar terminal → `clear`
 - Resetear terminal → `reset`
 - Crear directorio → `mkdir <foldername>`
@@ -189,7 +189,7 @@
 
 - Inicializar repositorio → `git init`
 - Verificar estado → `git status`
-- Agregar archivo → `git add`
+- Agregar archivo → `git add <path>`
 - Configurar nombre de usuario → `git config --global user.name "<username>"`
 - Configurar correo de usuario → `git config --global user.email "<email@domain.com>"`
 - Crear commit → `git commit -m "<message>"`
