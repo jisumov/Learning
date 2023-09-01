@@ -36,7 +36,7 @@ Platzi. (2021). *Aprendiendo a caminar en la terminal*.
 ## Terminal
 
 - Listar archivos → `ls`
-- Cambiar directorio → `cd <path>`
+- Cambiar directorio → `cd [path]`
 - Limpiar terminal → `clear` ↔ `Ctrl + L`
 - Listar detalladamente → `ls -l`
 - Mostrar vista humana → `ls -lh`
