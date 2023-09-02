@@ -124,3 +124,39 @@
 - Configurar nombre de usuario → `git config --global user.name "<username>"`
 - Configurar correo de usuario → `git config --global user.email "<email@domain.com>"`
 - Mostrar historial de commits → `git log [path]`
+
+# Clase 7 - Analizar cambios en los archivos de tu proyecto con Git
+
+## Terminal
+
+- Mostrar commit detalladamente → `git show [commit]`
+- Crear commit sin mensaje → `git commit`
+- Salir de vim en MINGW64 → `ESC + Shift + ZZ`
+- Agregar comentario → `#<text>`
+- Mostrar cambios entre commits → `git diff <old-commit-ID> <new-commit-ID>`
+
+# Clase 8 - ¿Qué es el staging?
+
+## Conceptos
+
+- Staging: área que prepara los cambios y utiliza memoria RAM.
+- Repositorio: área que almacena los cambios en `.git/`
+- Untracked: archivo sin rastrear.
+- Tracked: archivo rastreado.
+
+## Paso a paso
+
+- `git init` → Se crea el staging y el repositorio.
+- `git add <path>` → El archivo pasa al staging.
+- `git commit -m "<message>"` → El archivo pasa al repositorio.
+- `git checkout` → Restaurar archivos del árbol de trabajo.
+
+# Clase 9 - ¿Qué es branch (rama) y cómo funciona un Merge en Git?
+
+## Conceptos
+
+- Rama: línea de desarrollo del proyecto.
+- Rama de experimentos: development.
+- Rama de bugs: hotfix.
+- Merge: fusionar ramas.
+- Conflicto: se rompen archivos.
