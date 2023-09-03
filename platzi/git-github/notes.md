@@ -13,7 +13,7 @@
 
 - Inicializar repositorio → `git init`
 - Agregar archivo → `git add <path>`
-- Crear commit → `git commit -m "<message>"`
+- Crear commit con mensaje → `git commit -m "<message>"`
 - Verificar estado → `git status`
 - Mostrar commit detalladamente → `git show [commit]`
 - Mostrar historial de commits → `git log [path]`
@@ -125,7 +125,7 @@
 - Configurar correo de usuario → `git config --global user.email "<email@domain.com>"`
 - Mostrar historial de commits → `git log [path]`
 
-# Clase 7 - Analizar cambios en los archivos de tu proyecto con Git
+# Clase 7 - ****Analizar cambios en los archivos de tu proyecto con Git****
 
 ## Terminal
 
@@ -133,9 +133,9 @@
 - Crear commit sin mensaje → `git commit`
 - Salir de vim en MINGW64 → `ESC + Shift + ZZ`
 - Agregar comentario → `#<text>`
-- Mostrar cambios entre commits → `git diff <old-commit-ID> <new-commit-ID>`
+- Mostrar cambios entre commits → `git diff [old-commit-ID] [new-commit-ID]`
 
-# Clase 8 - ¿Qué es el staging?
+# Clase 8 - ****¿Qué es el staging?****
 
 ## Conceptos
 
@@ -146,12 +146,12 @@
 
 ## Paso a paso
 
-- `git init` → Se crea el staging y el repositorio.
+- `git init` → Crea el staging y el repositorio local.
 - `git add <path>` → El archivo pasa al staging.
-- `git commit -m "<message>"` → El archivo pasa al repositorio.
-- `git checkout` → Restaurar archivos del árbol de trabajo.
+- `git commit -m "<message>"` → El archivo pasa al repositorio local.
+- `git checkout` → Restaura archivos del árbol de trabajo.
 
-# Clase 9 - ¿Qué es branch (rama) y cómo funciona un Merge en Git?
+# Clase 9 - ****¿Qué es branch (rama) y cómo funciona un Merge en Git?****
 
 ## Conceptos
 
@@ -160,3 +160,43 @@
 - Rama de bugs: hotfix.
 - Merge: fusionar ramas.
 - Conflicto: se rompen archivos.
+
+# Clase 10 - Volver en el tiempo en nuestro repositorio utilizando reset y checkout
+
+## Terminal
+
+- Volver a una versión anterior y eliminar los archivos tanto del staging como del disco duro → `git reset <old-commit-ID> --hard`
+- Volver a una versión anterior y conservar los archivos del staging → `git reset <old-commit-ID> --soft`
+- Mostrar cambios entre staging y disco duro → `git diff`
+- Mostrar historial de commits a detalle → `git log [path] --stat`
+- Salir de vista → `q`
+- Ir a versión anterior de un archivo → `git checkout <old-commit-ID> <filename>`
+- Volver a versión actual de un archivo → `git checkout main <filename>`
+
+# Clase 11 - Git reset vs. Git rm
+
+## Comandos
+
+- `git reset --soft` → Mueve el puntero de la rama y HEAD, manteniendo los cambios en el staging.
+- `git reset --mixed` → Mueve el puntero de la rama y HEAD, deshaciendo los cambios en el staging y conservándolos en el disco duro.
+- `git reset --hard` → Mueve el puntero de la rama y HEAD, descartando todos los cambios tanto del staging como del disco duro.
+- `git reset HEAD` → Mantiene el puntero de la rama y HEAD, deshaciendo los cambios en el staging.
+- `git rm --cached` → Elimina los archivos del staging, conservándolos en el disco duro.
+- `git rm --force` → Elimina forzosamente los archivos tanto del staging como del disco duro.
+- `git revert` → Crea un nuevo commit que deshace los cambios y preserva el historial.
+
+## Diferencias
+
+![Platzi. (2020). *Git reset vs. Git rm*.](https://static.platzi.com/media/user_upload/git-reset%20%281%29-77a1294a-fb8b-43d0-aace-a517c1a05c2e.jpg)
+
+Platzi. (2020). *Git reset vs. Git rm*.
+
+# Clase 12 - Flujo de trabajo básico con un repositorio remoto
+
+## Comandos
+
+- `git clone <hostname>` → Clona el repositorio remoto.
+- `git push` → Envía los cambios del repositorio local al remoto.
+- `git fetch` → Actualiza los cambios del repositorio remoto al local.
+- `git merge` → Fusiona los cambios del repositorio remoto al local.
+- `git pull` → Utiliza fetch y merge.
