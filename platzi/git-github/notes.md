@@ -241,3 +241,47 @@ Platzi. (2020). *Git reset vs. Git rm*.
                 Hyperblog <span id="tagline">The blog header</span>
 >>>>>>> development
 ```
+
+# Clase 16 - ****Cómo funcionan las llaves públicas y privadas****
+
+## Conceptos
+
+- Cifrado asimétrico: técnica de cifrado compuesta por llaves públicas y privadas.
+- Llave pública: cifra el mensaje y la sabe todo el mundo.
+- Llave privada: descifra el mensaje y la sabe su dueño.
+- Las llaves están vinculadas matemáticamente, es decir, lo que se cifre con la llave pública, lo descifra la llave privada.
+
+## Cifrado asimétrico
+
+![Thakkar, J. (2020). *Types of Encryption: What to Know About Symmetric vs Asymmetric Encryption*.](https://sectigostore.com/blog/wp-content/uploads/2020/04/types-of-encryption-asymmetric-encryption.png)
+
+Thakkar, J. (2020). *Types of Encryption: What to Know About Symmetric vs Asymmetric Encryption*.
+
+# Clase 17 - Configura tus llaves SSH en local
+
+## Concepto
+
+- Secure Shell (SSH): protocolo seguro de acceso remoto y transferencia de archivos.
+
+## Terminal
+
+- Generar llave SSH → `ssh-keygen -t rsa -b 4096 -C "<email@domain.com>"`
+- Crear passphrase.
+- Inicializar agente SSH → `eval "$(ssh-agent -s)"`
+- Agregar llave al agente SSH → `ssh-add ~/.ssh/id_rsa`
+- Mostrar llave SSH → `cat ~/.ssh/id_rsa.pub`
+
+# Clase 18 - ****Uso de GitHub****
+
+## Conceptos
+
+- Es una plataforma web que guarda repositorios Git.
+- Raw: archivo sin procesar.
+- Blame: autor de cada cambio.
+- History: historial del archivo.
+
+## GitHub
+
+- Your repositories → New → Repository name → Add README file → Create repository.
+- Settings → Access → SSH and GPG keys → New SSH key.
+- Pegar toda la llave SSH.
