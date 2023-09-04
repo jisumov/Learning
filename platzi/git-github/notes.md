@@ -200,3 +200,44 @@ Platzi. (2020). *Git reset vs. Git rm*.
 - `git fetch` → Actualiza los cambios del repositorio remoto al local.
 - `git merge` → Fusiona los cambios del repositorio remoto al local.
 - `git pull` → Utiliza fetch y merge.
+
+# Clase 13 - Introducción a las ramas o branches de Git
+
+## Conceptos
+
+- El commit más reciente es el HEAD.
+- Al crear una rama se copia el main.
+- HEAD es un indicador de la rama actual.
+
+## Terminal
+
+- Agregar archivo y crear commit con mensaje → `git commit -am "<message>"`
+- Crear rama → `git branch <branch-name>`
+- Cambiar rama → `git checkout <branch-name>`
+
+# Clase 14 - Fusión de ramas con Git merge
+
+## Terminal
+
+- Mostrar ramas → `git branch`
+- Fusionar ramas → `git merge <branch-name>`
+
+# Clase 15 - Resolución de conflictos al hacer un merge
+
+## Terminal
+
+- Fusionar ramas → `git merge <branch-name>`
+
+## VSCode
+
+- Accept Current Change | Accept Incoming Change | Accept Both Changes | Compare Changes.
+
+## Sintaxis
+
+```html
+<<<<<<< HEAD
+                Hyperblog <span id="tagline">Main Blog</span>
+=======
+                Hyperblog <span id="tagline">The blog header</span>
+>>>>>>> development
+```
