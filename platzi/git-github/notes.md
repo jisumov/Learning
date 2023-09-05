@@ -125,7 +125,7 @@
 - Configurar correo de usuario → `git config --global user.email "<email@domain.com>"`
 - Mostrar historial de commits → `git log [path]`
 
-# Clase 7 - ****Analizar cambios en los archivos de tu proyecto con Git****
+# Clase 7 - Analizar cambios en los archivos de tu proyecto con Git
 
 ## Terminal
 
@@ -135,7 +135,7 @@
 - Agregar comentario → `#<text>`
 - Mostrar cambios entre commits → `git diff [old-commit-ID] [new-commit-ID]`
 
-# Clase 8 - ****¿Qué es el staging?****
+# Clase 8 - ¿Qué es el staging?
 
 ## Conceptos
 
@@ -151,7 +151,7 @@
 - `git commit -m "<message>"` → El archivo pasa al repositorio local.
 - `git checkout` → Restaura archivos del árbol de trabajo.
 
-# Clase 9 - ****¿Qué es branch (rama) y cómo funciona un Merge en Git?****
+# Clase 9 - ¿Qué es branch (rama) y cómo funciona un Merge en Git?
 
 ## Conceptos
 
@@ -242,7 +242,7 @@ Platzi. (2020). *Git reset vs. Git rm*.
 >>>>>>> development
 ```
 
-# Clase 16 - ****Cómo funcionan las llaves públicas y privadas****
+# Clase 16 - Cómo funcionan las llaves públicas y privadas
 
 ## Conceptos
 
@@ -271,7 +271,7 @@ Thakkar, J. (2020). *Types of Encryption: What to Know About Symmetric vs Asymme
 - Agregar llave al agente SSH → `ssh-add ~/.ssh/id_rsa`
 - Mostrar llave SSH → `cat ~/.ssh/id_rsa.pub`
 
-# Clase 18 - ****Uso de GitHub****
+# Clase 18 - Uso de GitHub
 
 ## Conceptos
 
@@ -285,3 +285,40 @@ Thakkar, J. (2020). *Types of Encryption: What to Know About Symmetric vs Asymme
 - Your repositories → New → Repository name → Add README file → Create repository.
 - Settings → Access → SSH and GPG keys → New SSH key.
 - Pegar toda la llave SSH.
+
+# Clase 19 - Tu primer push
+
+## Recomendación
+
+- Primero hacer un pull antes de un push.
+
+## Terminal
+
+- Agregar repositorio → `git remote add origin <git@github.com:username/Repository.git>`
+- Verificar referencias → `git remote -v`
+- Subir cambios → `git push origin main`
+- Renombrar rama actual → `git branch -m <branch-name>`
+- Descargar cambios → `git pull origin main`
+- Descargar cambios con historial no relacionado → `git pull origin main --allow-unrelated-histories`
+
+# Clase 20 - Git tag y versiones en Github
+
+## Terminal
+
+- Mostrar historial de commits gráficamente → `git log [path] --graph`
+- Mostrar historial de commits gráfica y brevemente → `git log [path] --graph --decorate --oneline`
+- Crear alias → `alias <shortcut>="<command-to-execute>"`
+- Crear tag → `git tag -a <tag-name> -m "<message>"`
+- Mostrar tags → `git tag`
+- Mostrar referencias → `git show-ref --tags`
+- Subir tags → `git push origin --tags`
+- Eliminar tag en local → `git tag -d <tag-name>`
+- Eliminar tag en remoto → `git push origin :refs/tags/<tag-name>`
+
+# Clase 21 - Manejo de ramas en GitHub
+
+## Terminal
+
+- Mostrar ramas y sus commits → `git show-branch`
+- Abrir GUI de Git → `gitk`
+- Subir rama → `git push origin <branch-name>`
