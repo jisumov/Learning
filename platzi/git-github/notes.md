@@ -322,3 +322,33 @@ Thakkar, J. (2020). *Types of Encryption: What to Know About Symmetric vs Asymme
 - Mostrar ramas y sus commits → `git show-branch`
 - Abrir GUI de Git → `gitk`
 - Subir rama → `git push origin <branch-name>`
+
+# Clase 22 - Configurar múltiples colaboradores en un repositorio de GitHub
+
+## Concepto
+
+- Clonar no es lo mismo que colaborar.
+
+## Paso a paso
+
+- Settings → Collaborators → Add people.
+
+# Clase 23 - Flujo de trabajo profesional: Haciendo merge de ramas de desarrollo a master
+
+## Conceptos
+
+- No es recomendable subir archivos binarios, tales como imágenes.
+- Forzar actualización → `Ctrl + Shift + R`
+
+## Terminal
+
+- `git status` → `git pull origin <branch-name>` → `git checkout <branch-name>` → `git add <path>` → `git commit -m "<message>"` → `git push origin <branch-name>` → `git merge <branch-name>`
+
+# Clase 24 - Flujo de trabajo profesional con Pull requests
+
+## Conceptos
+
+- Production Server: donde se aloja la versión final del proyecto.
+- Staging Server: donde se alojan las versiones de prueba.
+- Pull request: estado intermedio antes de enviar el merge, en el que se aprueban o no los cambios.
+- DevOps: administrador del entorno de desarrollo.
