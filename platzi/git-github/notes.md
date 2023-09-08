@@ -352,3 +352,51 @@ Thakkar, J. (2020). *Types of Encryption: What to Know About Symmetric vs Asymme
 - Staging Server: donde se alojan las versiones de prueba.
 - Pull request: estado intermedio antes de enviar el merge, en el que se aprueban o no los cambios.
 - DevOps: administrador del entorno de desarrollo.
+
+# Clase 25 - Utilizando Pull Requests en GitHub
+
+## Paso a paso
+
+- Seleccionar la rama a fusionar → New pull request → base: main → compare: <branch-name> → `git commit -am "<message>"` → `git push origin <branch-name>` → Compare & pull request → Agregar detalles → [Reviewers] → Create pull request.
+- Pull request → Commits → Files changed → Review changes → Agregar detalles → Request changes → Submit review.
+- `git pull origin <branch-name>` → `git commit -am "<message>"` → `git push origin <branch-name>` → Agregar detalles → Comment.
+- View changes → Agregar detalles → Approve → Submit review.
+- Merge pull request → Confirm merge → [Delete branch].
+- `git pull origin <branch-name>`
+
+# Clase 26 - Creando un Fork, contribuyendo a un repositorio
+
+## Concepto
+
+- Fork o Bifurcación toma una copia del estado actual del proyecto y la clona.
+
+## Paso a paso
+
+- Settings → Collaborators → Remove <username> as a collaborator.
+- Watch → Star → Fork.
+- Clone or download → Copiar URL → `git clone <hostname>` → `git commit -am "<message>"` → `git push`
+- New pull request → base repository: <repository-1> → base: <branch-name> → head repository: <repository-2> → compare: <branch-name> → Create pull request → Agregar detalles → [Allow edits from maintainers] → Create pull request.
+- Pull request → Commits → Files changed → Review changes → Agregar detalles → Approve → Submit review.
+- Merge pull request → Confirm merge → [Delete branch].
+- `git pull origin <branch-name>`
+- Compare → Switching the base.
+- Copiar URL → `git remote add upstream <hostname>` → `git pull upstream main` → `git commit -am "<message>"` → `git push origin main`
+
+# Clase 27 - Haciendo deployment a un servidor
+
+## Concepto
+
+- Algunos equipos de desarrollo ponen tags a las ramas que se envían a producción.
+
+## Terminal
+
+- Cambiar a directorio del servidor → `cd /var/www/<domain.com>/html`
+- Copiar URL → `git clone <hostname>`
+- Descargar cambios → `git pull origin main`
+
+## CI/CD
+
+- Continuous Integration/Continuous Delivery es un método de desarrollo de software que automatiza la creación, las pruebas y la implantación de cambios en el código, facilitando una entrega rápida y fiable del proyecto.
+- Servidores:
+    - Travis CI.
+    - Jenkins.
