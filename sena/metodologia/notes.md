@@ -114,3 +114,95 @@ Gliffy. (2019). *Guide to Flowchart Symbols, from Basic to Advanced*.
 
 - Es la definición de estructuras de datos y lógica de un algoritmo.
 - Tiene una sintaxis similar a los lenguajes de programación.
+
+# Semana 3 - Estructuras algorítmicas selectivas
+
+## Conceptos
+
+- Se utilizan para resolver situaciones que implican la toma de decisiones.
+- Decisión lógica denominada condición.
+- Clasificadas en:
+    - Estructura selectiva simple.
+    - Estructura selectiva doble o anidada.
+    - Estructura selectiva múltiple.
+
+## Estructura selectiva simple
+
+- Si la condición a evaluar se cumple, se ejecutarán una serie de instrucciones. De lo contrario, se pasa por alto dicha operación.
+
+![Toppr. (2023). *Python if, if…else, if…elif…else and Nested if Statement*.](https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2021/06/29085822/if-flowchart-606x1024.jpg)
+
+Toppr. (2023). *Python if, if…else, if…elif…else and Nested if Statement*.
+
+| Si | Identifica la estructura de control condicional. |
+| --- | --- |
+| Condición | Es la expresión lógica que denota la situación específica mediante la comparación de dos operadores, para dar un resultado booleano (falso, verdadero). |
+| Acción(es) | Es la instrucción o conjunto de instrucciones que se ejecutarán en el bloque correspondiente. |
+| Fin si | Indica el fin de la estructura de selección. |
+
+## Estructura selectiva doble
+
+- Si la condición a evaluar se cumple, se ejecutarán una serie de instrucciones. De lo contrario, se ejecutarán otra serie de instrucciones.
+
+![Toppr. (2023). *Python if, if…else, if…elif…else and Nested if Statement*.](https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2021/06/29090322/if-else-flowchart.jpg)
+
+Toppr. (2023). *Python if, if…else, if…elif…else and Nested if Statement*.
+
+| Si | Identifica la estructura de control condicional. |
+| --- | --- |
+| Condición | Es la expresión lógica que denota la situación específica mediante la comparación de dos operadores, para dar un resultado booleano (falso, verdadero). |
+| Entonces | Indica el curso de acción si se cumple la condición. |
+| Acción(es) | Es la instrucción o conjunto de instrucciones que se ejecutarán en el bloque correspondiente. |
+| Sino | Indica el curso de acción cuando no se cumple la condición. |
+| Fin si | Indica el fin de la estructura de selección. |
+
+## Estructura anidada
+
+- Pueden haber bifurcaciones en los condicionales, es decir, puede tener anidada otra estructura y esta a su vez a otra y así sucesivamente.
+
+![Toppr. (2023). *Python if, if…else, if…elif…else and Nested if Statement*.](https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2021/06/29090653/If-elif-else-flowchart-768x806.jpg)
+
+Toppr. (2023). *Python if, if…else, if…elif…else and Nested if Statement*.
+
+| Case | Identifica la estructura de selección múltiple. |
+| --- | --- |
+| Variable | Es la variable que indica la opción a elegir. |
+| 1: 2: 3:.. | Son las etiquetas que indican cada acción. |
+| Acción(es) | Es la instrucción o conjunto de instrucciones que se ejecutarán en el bloque correspondiente. |
+| Sino | Indica el curso de acción cuando no se cumple la condición. |
+| Fin si | Indica el fin de la estructura de selección. |
+
+# Semana 4 - Estructuras algorítmicas repetitivas
+
+## Conceptos
+
+- Se utilizan para formar ciclos repetitivos predeterminados.
+- Se controlan por medio de variables contadoras, las cuales incrementan o decrementan.
+
+## Estructura repetitiva para (for)
+
+![Toppr. (2023). *Python for Loop*.](https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2021/06/28104817/for-loop-flowchart.jpg)
+
+Toppr. (2023). *Python for Loop*.
+
+| Para | Es la palabra reservada que identifica el problema. |
+| --- | --- |
+| Contador | Es la variable entera que se utiliza para controlar el ciclo.
+Esta variable toma el valor inicial, que se incrementa de acuerdo con el incremento propuesto hasta llegar al valor final.
+La diferencia entre valor inicial y valor final será el número de veces que se repita el ciclo. |
+| Valor inicial | Es el valor inicial que tomará el contador, puede ser constante, variable o expresión entera. |
+| Valor final | Es el valor final que tomará el contador, puede ser constante, variable o expresión entera. |
+| Incremento | Es la magnitud del incremento o decremento del contador, si este no se indica se supone que el incremento es de 1. |
+| Acción(es) | Es la instrucción o conjunto de instrucciones que se ejecutarán en el bloque correspondiente. |
+
+## Estructura repetitiva mientras (while)
+
+| Para | Es la palabra reservada que identifica el problema. |
+| --- | --- |
+| Contador | Es la variable entera que se utiliza para controlar el ciclo.
+Esta variable toma el valor inicial, que se incrementa de acuerdo con el incremento propuesto hasta llegar al valor final.
+La diferencia entre valor inicial y valor final será el número de veces que se repita el ciclo. |
+| Valor inicial | Es el valor inicial que tomará el contador, puede ser constante, variable o expresión entera. |
+| Valor final | Es el valor final que tomará el contador, puede ser constante, variable o expresión entera. |
+| Incremento | Es la magnitud del incremento o decremento del contador, si este no se indica se supone que el incremento es de 1. |
+| Acción(es) | Es la instrucción o conjunto de instrucciones que se ejecutarán en el bloque correspondiente. |
