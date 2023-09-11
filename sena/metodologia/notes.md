@@ -115,6 +115,197 @@ Gliffy. (2019). *Guide to Flowchart Symbols, from Basic to Advanced*.
 - Es la definición de estructuras de datos y lógica de un algoritmo.
 - Tiene una sintaxis similar a los lenguajes de programación.
 
+# Semana 2 - Algoritmos y diagramas de flujo
+
+## Algoritmo
+
+- Secuencia de instrucciones o reglas ordenadas y finitas que realizan una tarea.
+
+## Diagrama de flujo
+
+- Representación gráfica del algoritmo.
+
+## Estructura de un algoritmo
+
+- Cabecera: se indica el nombre (identificador) del algoritmo.
+    - `Algoritmo <nombre_algoritmo>`
+- Declaraciones: se declaran las variables, constantes y tipos de datos.
+    - `Variables <declaracion_variables>`
+    - `Constantes <declaracion_constantes>`
+    - `Tipos de datos <declaracion_tipos_datos>`
+- Cuerpo: se escriben todas las instrucciones del algoritmo.
+- Inicio y fin: se marca el principio y el final del cuerpo.
+- Comentarios: se explica el diseño o funcionamiento del algoritmo.
+    - `/* <comentario> */`
+
+## Variables
+
+- Espacios de memoria reservados para almacenar valores.
+    
+    ```c
+    #include <conio>
+    #include <studio>
+    #include <iostream>
+    
+    int N1, N2; /* Declaración de variables */
+    
+    int main() {
+    	return 0;
+    }
+    ```
+    
+- Variables tipo cadena: conjuntos de caracteres.
+    
+    ```c
+    #include <conio>
+    #include <studio>
+    #include <iostream>
+    
+    char nombre[30]; /* Declaración de variable tipo cadena */
+    
+    int main() {
+    	return 0;
+    }
+    ```
+    
+- Inicialización de variables: asigna valores luego de declaradas.
+    
+    ```c
+    #include <conio>
+    #include <studio>
+    #include <iostream>
+    
+    int N1=0, N2=0; /* Declaración e inicialización de variables */
+    
+    int main() {
+    	return 0;
+    }
+    ```
+    
+- Constantes: variables cuyos valores asignados no se pueden modificar.
+    
+    ```c
+    #include <conio>
+    #include <studio>
+    #include <iostream>
+    
+    const float pi=3.1416; /* Declaración de constante */
+    
+    int main() {
+    	return 0;
+    }
+    ```
+    
+
+## Operadores
+
+- Símbolos que indican al compilador la realización de cálculos lógicos o matemáticos.
+    
+    
+    | Pseudocódigo | Lenguaje C | Operador |
+    | --- | --- | --- |
+    | + | + | Suma |
+    | - | - | Resta |
+    | * | * | Multiplicación |
+    | / | / | División |
+    | Módulo | Módulo | Módulo o resto de división entera |
+    |  |  |  |
+    |  |  |  |
+- Operadores relacionales:
+    
+    
+    | Pseudocódigo | Lenguaje C | Operador |
+    | --- | --- | --- |
+    | > | > | Mayor que |
+    | < | < | Menor que |
+    | > | >= | Mayor o igual que |
+    | < | <= | Menor o igual que |
+    | <> | != | Diferente |
+    | = | == | Igual |
+- Operadores lógicos:
+    
+    
+    | Pseudocódigo | Lenguaje C | Operador |
+    | --- | --- | --- |
+    | And | && | Y |
+    | Or | || | O |
+    | Not | ! | Negación |
+- Prioridad de operadores:
+    1. `()`
+    2. `^`
+    3. `*, /, Mod, Not`
+    4. `+, -, And`
+    5. `>, <, >=, <=, <>, =, Or`
+
+## Tipos de datos
+
+- Determinan el conjunto de valores que puede tomar una variable.
+    
+    
+    | Pseudocódigo | Lenguaje C | Operador |
+    | --- | --- | --- |
+    | Entero | int | -2147483648 a 2147483647 |
+    | Real | float | 3.4e-38 a 3.4e+38 |
+    | Carácter | char | 0 a 255 |
+    | Doble precisión | double | 1.7e-308 a 1.7e308 |
+    | Booleano | bool | 0,1 (verdadero o falso) |
+
+## Expresiones
+
+- Combinaciones de variables, constante, símbolos de operación y nombres de funciones especiales.
+- Se clasifican en:
+    - Aritméticas.
+    - Relacionales.
+    - Lógicas.
+
+## Estructura de un pseudocódigo
+
+| Instrucciones en C | Pseudocódigo |
+| --- | --- |
+| Main | principal |
+| { | inicio |
+| } | fin |
+| /* … */ | comentarios |
+| printf | imprimir |
+| scanf | leer |
+| break | interrumpir |
+| continue | continuar |
+| do-while mientras | hacer mientras |
+| for(I=VI; I<=VF; I++) | Desde I=VI; I<=VF; Inc I |
+| go to | ir a |
+| if_else | si-entonces-sino |
+| if | si |
+| return | regresar |
+| switch | según sea |
+| case | en caso |
+| while | mientras |
+| do while | hacer-mientras |
+| int | entero |
+| char | carácter |
+| float | real |
+| double | doble |
+| string | cadena |
+
+## Ejemplo
+
+```c
+#include <studio.h>
+#include <cstdlib>
+
+int main() {
+	const float pi=3.1416; /* Declaración de constante */
+	float radio, area; /* Declaración de ortras variables*/
+
+	printf("Programa para calcular el área de un círculo");
+	printf("Introduzca el radio del círculo");
+	scanf("%f", &radio); /* Captura de datos
+	area = radio * 2 * pi; /* Realiza el cálculo */
+	printf("El area es %f\n",area); /* Mostrar los resultados */
+	
+	return 0;
+}
+```
+
 # Semana 3 - Estructuras algorítmicas selectivas
 
 ## Conceptos
