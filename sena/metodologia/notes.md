@@ -209,8 +209,6 @@ Gliffy. (2019). *Guide to Flowchart Symbols, from Basic to Advanced*.
     | * | * | Multiplicación |
     | / | / | División |
     | Módulo | Módulo | Módulo o resto de división entera |
-    |  |  |  |
-    |  |  |  |
 - Operadores relacionales:
     
     
@@ -228,7 +226,7 @@ Gliffy. (2019). *Guide to Flowchart Symbols, from Basic to Advanced*.
     | Pseudocódigo | Lenguaje C | Operador |
     | --- | --- | --- |
     | And | && | Y |
-    | Or | || | O |
+    | Or | II | O |
     | Not | ! | Negación |
 - Prioridad de operadores:
     1. `()`
@@ -298,7 +296,7 @@ int main() {
 
 	printf("Programa para calcular el área de un círculo");
 	printf("Introduzca el radio del círculo");
-	scanf("%f", &radio); /* Captura de datos
+	scanf("%f", &radio); /* Captura de datos */
 	area = radio * 2 * pi; /* Realiza el cálculo */
 	printf("El area es %f\n",area); /* Mostrar los resultados */
 	
