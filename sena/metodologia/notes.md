@@ -252,7 +252,7 @@ Gliffy. (2019). *Guide to Flowchart Symbols, from Basic to Advanced*.
 
 ## Expresiones
 
-- Combinaciones de variables, constante, símbolos de operación y nombres de funciones especiales.
+- Combinaciones de variables, constantes, símbolos de operación y nombres de funciones especiales.
 - Se clasifican en:
     - Aritméticas.
     - Relacionales.
@@ -325,8 +325,9 @@ int main() {
 
 Toppr. (2023). *Python if, if…else, if…elif…else and Nested if Statement*.
 
-| Si | Identifica la estructura de control condicional. |
+|   |   |
 | --- | --- |
+| Si | Identifica la estructura de control condicional. |
 | Condición | Es la expresión lógica que denota la situación específica mediante la comparación de dos operadores, para dar un resultado booleano (falso, verdadero). |
 | Acción(es) | Es la instrucción o conjunto de instrucciones que se ejecutarán en el bloque correspondiente. |
 | Fin si | Indica el fin de la estructura de selección. |
@@ -339,8 +340,9 @@ Toppr. (2023). *Python if, if…else, if…elif…else and Nested if Statement*.
 
 Toppr. (2023). *Python if, if…else, if…elif…else and Nested if Statement*.
 
-| Si | Identifica la estructura de control condicional. |
+|   |   |
 | --- | --- |
+| Si | Identifica la estructura de control condicional. |
 | Condición | Es la expresión lógica que denota la situación específica mediante la comparación de dos operadores, para dar un resultado booleano (falso, verdadero). |
 | Entonces | Indica el curso de acción si se cumple la condición. |
 | Acción(es) | Es la instrucción o conjunto de instrucciones que se ejecutarán en el bloque correspondiente. |
@@ -355,8 +357,9 @@ Toppr. (2023). *Python if, if…else, if…elif…else and Nested if Statement*.
 
 Toppr. (2023). *Python if, if…else, if…elif…else and Nested if Statement*.
 
-| Case | Identifica la estructura de selección múltiple. |
+|   |   |
 | --- | --- |
+| Case | Identifica la estructura de selección múltiple. |
 | Variable | Es la variable que indica la opción a elegir. |
 | 1: 2: 3:.. | Son las etiquetas que indican cada acción. |
 | Acción(es) | Es la instrucción o conjunto de instrucciones que se ejecutarán en el bloque correspondiente. |
@@ -372,15 +375,14 @@ Toppr. (2023). *Python if, if…else, if…elif…else and Nested if Statement*.
 
 ## Estructura repetitiva para (for)
 
-![Toppr. (2023). *Python for Loop*.](https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2021/06/28104817/for-loop-flowchart.jpg)
+![Shokeen, H. (2023). *C for Loop*.](https://media.geeksforgeeks.org/wp-content/uploads/20230627104742/C-for-Loop.png)
 
-Toppr. (2023). *Python for Loop*.
+Shokeen, H. (2023). *C for Loop*.
 
-| Para | Es la palabra reservada que identifica el problema. |
+|   |   |
 | --- | --- |
-| Contador | Es la variable entera que se utiliza para controlar el ciclo.
-Esta variable toma el valor inicial, que se incrementa de acuerdo con el incremento propuesto hasta llegar al valor final.
-La diferencia entre valor inicial y valor final será el número de veces que se repita el ciclo. |
+| Para | Es la palabra reservada que identifica el problema. 
+| Contador | Es la variable entera que se utiliza para controlar el ciclo. Esta variable toma el valor inicial, que se incrementa de acuerdo con el incremento propuesto hasta llegar al valor final. La diferencia entre valor inicial y valor final será el número de veces que se repita el ciclo. |
 | Valor inicial | Es el valor inicial que tomará el contador, puede ser constante, variable o expresión entera. |
 | Valor final | Es el valor final que tomará el contador, puede ser constante, variable o expresión entera. |
 | Incremento | Es la magnitud del incremento o decremento del contador, si este no se indica se supone que el incremento es de 1. |
@@ -388,12 +390,26 @@ La diferencia entre valor inicial y valor final será el número de veces que se
 
 ## Estructura repetitiva mientras (while)
 
-| Para | Es la palabra reservada que identifica el problema. |
+![Shokeen, H. (2023). *while loop in C*.](https://media.geeksforgeeks.org/wp-content/uploads/20220927171802/WhileloopinC2.png)
+
+Shokeen, H. (2023). *while loop in C*.
+
+|   |   |
 | --- | --- |
-| Contador | Es la variable entera que se utiliza para controlar el ciclo.
-Esta variable toma el valor inicial, que se incrementa de acuerdo con el incremento propuesto hasta llegar al valor final.
-La diferencia entre valor inicial y valor final será el número de veces que se repita el ciclo. |
-| Valor inicial | Es el valor inicial que tomará el contador, puede ser constante, variable o expresión entera. |
-| Valor final | Es el valor final que tomará el contador, puede ser constante, variable o expresión entera. |
-| Incremento | Es la magnitud del incremento o decremento del contador, si este no se indica se supone que el incremento es de 1. |
+| Repita | Identifica la estructura y su inicio como un ciclo repetitivo. |
+| Condición | Es la expresión lógica que controla la ejecución del ciclo. |
+| Acción(es) | Es la instrucción o conjunto de instrucciones que se ejecutarán dentro del ciclo. |
+| Fin mientras | Delimita el fin del ciclo repetitivo y envía el control al inicio de la estructura. |
+
+## Estructura repetitiva repita hasta (do while)
+
+![Shokeen, H. (2023). *do…while Loop in C*.](https://media.geeksforgeeks.org/wp-content/uploads/20221006152307/dowhileloopinc.png)
+
+Shokeen, H. (2023). *do…while Loop in C*.
+
+|   |   |
+| --- | --- |
+| Repita | Identifica la estructura y su inicio como un ciclo repetitivo e indicia el inicio (equivale al Do). |
 | Acción(es) | Es la instrucción o conjunto de instrucciones que se ejecutarán en el bloque correspondiente. |
+| Hasta | Indica el fin del ciclo y significa, que hasta que se cumpla la condición se saldrá del ciclo, en caso contrario, automáticamente se va al inicio. |
+| Condición | Es la expresión lógica que controla la terminación del ciclo. |
