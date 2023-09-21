@@ -1,4 +1,4 @@
-// Made by jisumov
+/* Made by jisumov z/
 #include <iostream>
 
 using namespace std;
