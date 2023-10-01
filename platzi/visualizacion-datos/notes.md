@@ -407,4 +407,4 @@ Data Viz Project. (2023). *Table Chart*.
 
 ## Conclusión
 
-- La data biz afecta en la vida diaria.
+- La data viz afecta en la vida diaria.
