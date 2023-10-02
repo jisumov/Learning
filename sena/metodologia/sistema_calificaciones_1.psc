@@ -1,8 +1,8 @@
 Algoritmo sistema_calificaciones
 	
-	Escribir "JosÈ Ignacio Su·rez Montiel - FICHA 2821949"
+	Escribir "Jos√© Ignacio Su√°rez Montiel - FICHA 2821949"
 	
-	// DeclaraciÛn de variables
+	// Declaraci√≥n de variables
 	Definir nombre_estudiante Como Caracter
 	Definir codigo_estudiante Como Entero
 	Definir nota_primer_parcial, nota_segundo_parcial, nota_examen_final, nota_definitiva Como Real
@@ -12,7 +12,7 @@ Algoritmo sistema_calificaciones
 	Escribir "Bienvenido/a al sistema de calificaciones"
 	Escribir "Ingresa el nombre del estudiante: "
 	Leer nombre_estudiante
-	Escribir "Ingresa el cÛdigo de " nombre_estudiante ": "
+	Escribir "Ingresa el c√≥digo de " nombre_estudiante ": "
 	Leer codigo_estudiante
 	Escribir "Ingresa la nota del primer parcial de " nombre_estudiante ": "
 	Leer nota_primer_parcial
@@ -26,18 +26,18 @@ Algoritmo sistema_calificaciones
 				nota_definitiva = nota_primer_parcial*0.35+nota_segundo_parcial*0.35+nota_examen_final*0.30
 				es_aprobado = nota_definitiva>=3.5
 				Si es_aprobado Entonces
-					Escribir "El estudiante " nombre_estudiante ", con cÛdigo " codigo_estudiante ", aprobÛ la asignatura con una nota definitiva de " nota_definitiva
+					Escribir "El estudiante " nombre_estudiante ", con c√≥digo " codigo_estudiante ", aprob√≥ la asignatura con una nota definitiva de " nota_definitiva
 				SiNo
-					Escribir "El estudiante " nombre_estudiante ", con cÛdigo " codigo_estudiante ", reprobÛ la asignatura con una nota definitiva de " nota_definitiva
+					Escribir "El estudiante " nombre_estudiante ", con c√≥digo " codigo_estudiante ", reprob√≥ la asignatura con una nota definitiva de " nota_definitiva
 				FinSi
 			SiNo
-				Escribir "La nota del examen final est· fuera del rango"
+				Escribir "La nota del examen final est√° fuera del rango"
 			FinSi
 		SiNo
-			Escribir "La nota del segundo parcial est· fuera del rango"
+			Escribir "La nota del segundo parcial est√° fuera del rango"
 		FinSi
 	SiNo
-		Escribir "La nota del primer parcial est· fuera del rango"
+		Escribir "La nota del primer parcial est√° fuera del rango"
 	FinSi
 
 FinAlgoritmo
