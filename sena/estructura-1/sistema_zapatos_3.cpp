@@ -24,23 +24,37 @@ int main() {
     cin >> cantidad_zapato;
     cout << "Ingresa el costo del zapato: ";
     cin >> costo_zapato;
-    cout << "Ingresa el precio del zapato: ";
-    cin >> precio_zapato;
+    /*cout << "Ingresa el precio del zapato: ";
+    cin >> precio_zapato;*/
     
     system("cls");
     
     if (costo_zapato<=30000) {
         tipo_zapato = 'A';
-        porcentaje_utilidad = 50;
     } else if (costo_zapato > 30000 && costo_zapato <= 60000) {
         tipo_zapato = 'B';
-        porcentaje_utilidad = 40;
     } else if (costo_zapato > 60000) {
         tipo_zapato = 'C';
-        porcentaje_utilidad = 30;
     } else {
         cout << "Error en el sistema" << endl;
     }
+
+    switch (tipo_zapato) {
+        case 'A':
+            porcentaje_utilidad = 50;
+            break;
+        case 'B':
+            porcentaje_utilidad = 40;
+            break;
+        case 'C':
+            porcentaje_utilidad = 30;
+            break;
+        default:
+            cout << "Error en el sistema" << endl;
+            break;
+    }
+
+    precio_zapato = costo_zapato*100/(100-porcentaje_utilidad);
 
     cout << "Resumen del zapato\n" << endl;
     cout << "Referencia del zapato: " << referencia_zapato << endl;
